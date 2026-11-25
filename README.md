@@ -9,6 +9,11 @@ Or download the `.mpp` from [Releases](https://github.com/traychewy/notes-dark-/
 ## Patches list
 
 <!-- PATCHES_START -->
+> **[v1.0.0](https://github.com/traychewy/Notes-dark-/releases/tag/v1.0.0)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`main`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**1 patch** across **1 app**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+
+| # | App | Patches | Version | Package |
+|---|---|---|---|---|
+| 1 | [**Samsung Notes**](PATCHES.md#samsung-notes-comsamsungandroidappnotes) | 1 | — | [`com.samsung.android.app.notes`](https://play.google.com/store/apps/details?id=com.samsung.android.app.notes) |
 <!-- PATCHES_END -->
 
 ## How it works
