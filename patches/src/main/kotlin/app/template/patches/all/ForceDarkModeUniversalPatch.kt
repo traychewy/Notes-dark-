@@ -2,7 +2,7 @@ package app.template.patches.all
 
 import app.morphe.patcher.patch.booleanOption
 import app.morphe.patcher.patch.patch
-import app.morphe.patcher.patch.resourceFile
+import app.morphe.patcher.patch.resourceXml
 import app.template.patches.shared.hookApplicationOnCreate
 
 private const val EXTENSION_CLASS = "Lapp/template/extension/darkmode/ForceDarkModePatch;"
@@ -32,18 +32,18 @@ val forceDarkModeUniversalPatch = patch(
 
     execute {
         if (autoDarken == true) {
-            // A style the extension applies on top of each activity's theme. Written as its
-            // own values file so no existing resources are touched.
-            resourceFile("res/values/morphe_force_dark.xml", copy = false).writeText(
-                """
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <resources>
-                        <style name="$FORCE_DARK_STYLE">
-                            <item name="android:forceDarkAllowed">true</item>
-                        </style>
-                    </resources>
-                """.trimIndent(),
-            )
+            // A style the extension applies on top of each activity's theme. Opened with
+            // copy = false, so it only adds this style and leaves the app's own styles as they are.
+            // (It must go in styles.xml: the resource encoder reads styles only from that file.)
+            resourceXml("res/values/styles.xml", copy = false).use { styles ->
+                styles.root.appendChild("style") {
+                    setAttribute("name", FORCE_DARK_STYLE)
+                    appendChild("item") {
+                        setAttribute("name", "android:forceDarkAllowed")
+                        text = "true"
+                    }
+                }
+            }
         }
 
         hookApplicationOnCreate(
