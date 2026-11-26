@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-26T02:07:47",
-  "description": "## [1.1.1](https://github.com/traychewy/Notes-dark-/compare/v1.1.0...v1.1.1) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* Force dark mode (any app): add the auto-darken style through styles.xml ([c06355c](https://github.com/traychewy/Notes-dark-/commit/c06355cf5df7b53c014db0c1ffab69524194a68c))",
-  "download_url": "https://github.com/traychewy/Notes-dark-/releases/download/v1.1.1/patches-1.1.1.mpp",
+  "created_at": "2026-11-26T02:12:57",
+  "description": "## [1.1.2](https://github.com/traychewy/Notes-dark-/compare/v1.1.1...v1.1.2) (2026-11-26)\n\n### 🐛 Bug Fixes\n\n* Hook apps whose Application.onCreate uses more than 16 registers ([b69adc6](https://github.com/traychewy/Notes-dark-/commit/b69adc6043ce58f15b6ed44fd5b9011d887c2532))",
+  "download_url": "https://github.com/traychewy/Notes-dark-/releases/download/v1.1.2/patches-1.1.2.mpp",
   "signature_download_url": "",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }

@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/traychewy/Notes-dark-/compare/v1.1.1...v1.1.2) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* Hook apps whose Application.onCreate uses more than 16 registers ([b69adc6](https://github.com/traychewy/Notes-dark-/commit/b69adc6043ce58f15b6ed44fd5b9011d887c2532))
+
 ## [1.1.1](https://github.com/traychewy/Notes-dark-/compare/v1.1.0...v1.1.1) (2026-11-26)
 
 ### 🐛 Bug Fixes
