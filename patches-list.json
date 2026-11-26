@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "patches": [
     {
       "name": "Force dark mode",
@@ -28,6 +28,24 @@
         }
       ],
       "options": []
+    },
+    {
+      "name": "Force dark mode (any app)",
+      "description": "Shows the app in dark mode, whatever the system theme is. Uses the app's own dark theme, and can auto-darken apps that don't have one.",
+      "default": false,
+      "category": null,
+      "compatiblePackages": null,
+      "options": [
+        {
+          "key": "autoDarken",
+          "title": "Auto-darken apps without a dark theme",
+          "description": "Lets Android invert the colours of light-only screens (Android 10+). Turn off if an app's colours look wrong.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": true,
+          "values": null
+        }
+      ]
     }
   ]
 }
