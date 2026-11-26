@@ -16,7 +16,14 @@ Or download the `.mpp` from [Releases](https://github.com/traychewy/notes-dark-/
 | 1 | [**Samsung Notes**](PATCHES.md#samsung-notes-comsamsungandroidappnotes) | 1 | — | [`com.samsung.android.app.notes`](https://play.google.com/store/apps/details?id=com.samsung.android.app.notes) |
 <!-- PATCHES_END -->
 
-## How it works
+
+## Force dark mode (any app)
+A universal version of the same idea. It's off by default, so tick it in Morphe for each app you patch.
+- Uses the app's own dark theme via per-app night mode (Android 12+). The system theme isn't changed.
+- Option **Auto-darken apps without a dark theme** (on by default): lets Android invert light-only screens. Turn it off if an app's colours look wrong.
+- Won't work for apps that are packed/protected, that check their own signature, or that you can't uninstall (built-in system apps). Google apps also need microG for sign-in.
+
+## How it works (Samsung Notes)
 - Reads the Application class from `AndroidManifest.xml` and injects a call at the start of its `onCreate()` (or adds an `onCreate()` if there isn't one).
 - That call (`extensions/.../samsungnotes/ForceDarkModePatch.java`) uses `UiModeManager.setApplicationNightMode(MODE_NIGHT_YES)` (Android 12+), a per-app night mode. Only Samsung Notes is affected; the system theme is untouched.
 - Fallback: `AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)` via reflection, if that class isn't obfuscated.
