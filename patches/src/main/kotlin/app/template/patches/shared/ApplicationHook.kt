@@ -52,7 +52,9 @@ fun hookApplicationOnCreate(extensionMethod: String, fallbackApplication: String
                 "The app may be packed or protected, which this patch can't handle.",
         )
 
-    val call = "invoke-static {p0}, $extensionMethod"
+    // The range form, because the short form can only name registers v0-v15, and p0 is the last
+    // register of the method, which in a method with many locals is far past v15.
+    val call = "invoke-static/range {p0 .. p0}, $extensionMethod"
 
     val onCreate = applicationClass.methods.firstOrNull { method ->
         method.name == "onCreate" &&
