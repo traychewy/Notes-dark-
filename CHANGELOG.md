@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/traychewy/Notes-dark-/compare/v1.1.0...v1.1.1) (2026-11-26)
+
+### 🐛 Bug Fixes
+
+* Force dark mode (any app): add the auto-darken style through styles.xml ([c06355c](https://github.com/traychewy/Notes-dark-/commit/c06355cf5df7b53c014db0c1ffab69524194a68c))
+
 ## [1.1.0](https://github.com/traychewy/Notes-dark-/compare/v1.0.0...v1.1.0) (2026-11-26)
 
 ### ✨ New Features

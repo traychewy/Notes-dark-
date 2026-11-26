@@ -9,7 +9,7 @@ Or download the `.mpp` from [Releases](https://github.com/traychewy/notes-dark-/
 ## Patches list
 
 <!-- PATCHES_START -->
-> **[v1.1.0](https://github.com/traychewy/Notes-dark-/releases/tag/v1.1.0)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`main`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**2 patches** across **1 app**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
+> **[v1.1.1](https://github.com/traychewy/Notes-dark-/releases/tag/v1.1.1)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`main`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**2 patches** across **1 app**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
 | # | App | Patches | Version | Package |
 |---|---|---|---|---|
